@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .menu a::before {
+        content: "";
+        bottom: 0;
+        width: 75%;
+        left: 12.5%;
+        height: 2px;
+        background-color: white;
+        display: none;
+        position: absolute;
+    }
+    .menu a:hover::before {
+        display: block;
+    }
+}
