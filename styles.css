@@ -586,6 +586,10 @@ video {
   order: 3;
 }
 
+.order-2 {
+  order: 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
