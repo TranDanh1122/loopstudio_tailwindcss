@@ -13,6 +13,12 @@ module.exports = {
         alata: ['Alata', 'sans-serif'],
         josefin: ['Josefin Sans', 'sans-serif'],
       },
+      screens: {
+        "mb": { min: "0", max: "767px" }
+      },
+      transitionProperty: {
+        "display": "display",
+      },
     },
   },
   plugins: [],

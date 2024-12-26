@@ -25,65 +25,219 @@
 
 <body>
   <header
-    class="w-full font bg-no-repeat bg-[url(images/desktop/image-hero.jpg)] bg-center bg-cover bg-opacity-50 pb-[8.75rem]">
-    <div class="max-w-[1110px] w-full mx-auto">
-      <nav class="flex flex-row flex-nowrap items-center justify-between pt-16">
-        <i class="block w-48 h-8 bg-white"
+    class="w-full  bg-no-repeat bg-[url(images/desktop/image-hero.jpg)] mb:bg-[url(images/mobile/image-hero.jpg)] bg-center bg-cover bg-opacity-50 pb-[8.75rem]">
+    <div class="max-w-[1110px] w-full mx-auto mb:w-[99%]">
+      <nav class="flex flex-row flex-nowrap items-center justify-between pt-16 w-full mb:flex-wrap">
+        <i class="block w-48 h-8 bg-white relative z-10 mb:w-1/2"
           style="mask: url(images/logo.svg) center / contain no-repeat; -webkit-mask: url(images/logo.svg) center / contain no-repeat;"></i>
+        <div class="mobile_menu relative hidden mb:block  mb:w-1/2 z-10 h-4 text-right"><i
+            class=" w-6 h-4 mb:block ml-auto  bg-white"></i></div>
         <ul
-          class="menu flex flex-nowrap flex-row gap-8 items-center justify-start list-none text-white leading-6 font-alata">
-          <li class="relative"><a href="#"> About</a></li>
-          <li class="relative"><a href="#"> Careers</a></li>
-          <li class="relative"><a href="#"> Events</a></li>
-          <li class="relative"><a href="#"> Products</a></li>
-          <li class="relative"><a href="#"> Support</a></li>
+          class="menu flex flex-nowrap flex-row gap-8 items-center justify-start list-none text-white leading-6 font-alata mb:hidden mb:flex-col mb:w-full mb:h-full mb:items-start mb:pl-4 mb:gap-16">
+          <li class="relative mb:  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="About">
+              About</a></li>
+          <li class="relative mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Careers">
+              Careers</a></li>
+          <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Events"> Events</a>
+          </li>
+          <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Products">
+              Products</a>
+          </li>
+          <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Support"> Support</a>
+          </li>
         </ul>
       </nav>
       <h1
-        class="mt-[8.125rem] font-josefin font-light text-[4.5rem] text-white p-10 w-[60%] border-white border-[2px] border-solid">
+        class="mt-[8.125rem] font-josefin font-light uppercase text-[4.5rem] text-white p-10 w-[60%] mb:w-full mb:leading-[2.5rem] mb:text-[2.5rem] border-white border-[2px] border-solid">
         Immersive experiences that deliver</h1>
     </div>
   </header>
+  <main>
+    <section class="max-w-[1110px] w-full mx-auto relative mt-40 mb:w-[99%] mb:mx-auto">
+      <picture>
+        <source srcset="images/desktop/image-interactive.jpg" type="image/jpg" media="(min-width: 768px)">
+        <source srcset="images/mobile/image-interactive.jpg" media="(max-width: 767px)">
+        <img src="images/desktop/image-interactive.jpg" alt="image-interactive"
+          class="w-[65%] mb:w-full h-auto object-cover ">
+      </picture>
+      <div
+        class="absolute w-[50%] h-auto pt-24 pl-24 bottom-0 right-0 bg-white mb:static mb:w-full mb:p-0 mb:text-center">
+        <h2 class="text-[3rem] leading-[3rem] font-light font-josefin uppercase mb:text-[2rem] mb:leading-[2rem] mb:mt-4">The leader in interactive VR</h2>
+        <p class="leading-6 text-black text-opacity-50 mt-6 mb:text-justify">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.</p>
+      </div>
+    </section>
+    <section class="max-w-[1110px] w-full mx-auto relative mt-40 mb:w-[99%]">
+      <div class="flex flex-row flex-wrap items-center justify-between gap-y-20 mb:justify-center">
+        <h2 class="leading-[3rem] text-[3rem] font-light font-josefin uppercase order-1 mb:text-[2rem] mb:leading-8 ">
+          Our creations</h2>
+        <a class="px-10 py-3 bg-white hover:bg-black text-black hover:text-white uppercase border-[1px] border-black cursor-pointer mb:order-3"
+          href="#" title="See All"> See all</a>
+        <div class="creations flex flex-wrap gap-8 w-full order-3 mb:order-2">
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-deep-earth.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-deep-earth.jpg" type="image/jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-deep-earth.jpg" alt="image-deep-earth" class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                Deep earth</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-night-arcade.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-night-arcade.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-night-arcade.jpg" alt="image-night-arcade"
+                class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                Night arcade</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-soccer-team.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-soccer-team.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-soccer-team.jpg" alt="image-soccer-team"
+                class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                SOCCER TEAM VR</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-grid.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-grid.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-grid.jpg" alt="image-grid" class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                THE GRID</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-from-above.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-from-above.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-from-above.jpg" alt="image-from-above" class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                FROM UP ABOVE VR</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-pocket-borealis.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-pocket-borealis.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-pocket-borealis.jpg" alt="image-pocket-borealis"
+                class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                POCKET BOREALIS</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-curiosity.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-curiosity.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-curiosity.jpg" alt="image-curiosity" class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                THE CURIOSITY</h3>
+            </div>
+          </div>
+          <div class="creations__item w-[calc(25%-1.5rem)] relative mb:w-full">
+            <picture>
+              <source srcset="images/desktop/image-fisheye.jpg" type="image/jpg" media="(min-width: 768px)">
+              <source srcset="images/mobile/image-fisheye.jpg" media="(max-width: 767px)">
+              <img src="images/desktop/image-fisheye.jpg" alt="image-fisheye" class="w-full h-full object-cover">
+            </picture>
+            <div
+              class="item__content absolute w-full h-1/2 bg-gradient-to-b hidden from-[rgba(0,0,0,0)] to-black left-0 bottom-0 flex-col items-center justify-center transition-[display] duration-1000 ease-linear">
+              <h3
+                class=" text-white uppercase font-josefin text-[2rem] leading-8 font-light text-center mb:text-[1.5rem] mb:leading-6">
+                MAKE IT FISHEYE</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white mt-44">
+    <div class="py-20 flex flex-wrap w-[90%] max-w-[1110px] mb:w-[99%] mx-auto gap-y-6 mb:justify-center mb:items-center">
+      <div class="logo__wrapper  w-1/2 mb:w-full">
+        <i class="block w-48 h-8 mb:mx-auto bg-white relative z-10"
+          style="mask: url(images/logo.svg) center / contain no-repeat; -webkit-mask: url(images/logo.svg) center / contain no-repeat;"></i>
+      </div>
+      <div class="socials w-1/2 flex flex-row flex-nowrap gap-4 justify-end mb:w-full mb:justify-center">
+        <a href="#" title="facebook" class=""><i class="block w-6 h-5 bg-white"
+            style="mask:url(images/icon-facebook.svg) center / contain no-repeat; -webkit-mask: url(images/icon-facebook.svg) center / contain no-repeat"></i></a>
+        <a href="#" title="twitter" class=""><i class="block w-6 h-5 bg-white"
+            style="mask:url(images/icon-twitter.svg) center / contain no-repeat; -webkit-mask: url(images/icon-twitter.svg) center / contain no-repeat"></i></a>
+        <a href="#" title="pin" class=""><i class="block w-6 h-5 bg-white"
+            style="mask:url(images/icon-pinterest.svg) center / contain no-repeat; -webkit-mask: url(images/icon-pinterest.svg) center / contain no-repeat"></i></a>
+        <a href="#" title="ins" class=""><i class="block w-6 h-5 bg-white"
+            style="mask:url(images/icon-instagram.svg) center / contain no-repeat; -webkit-mask: url(images/icon-instagram.svg) center / contain no-repeat"></i></a>
+      </div>
+   
+    <ul
+    class="menu flex flex-nowrap gap-4 items-center justify-start list-none w-1/2 text-white leading-6 font-alata mb:flex-col mb:w-full mb:h-full mb:items-center mb:gap-4">
+    <li class="relative mb:  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="About">
+        About</a></li>
+    <li class="relative mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Careers">
+        Careers</a></li>
+    <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Events"> Events</a>
+    </li>
+    <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Products">
+        Products</a>
+    </li>
+    <li class="relative  mb:text-[1.5rem] mb:font-josefin mb:font-light"><a href="#" title="Support"> Support</a>
+    </li>
+  </ul>
+  <span class="block leading-6 text-opacity-50 text-white text-right w-1/2 mb:w-full mb:text-center">  © 2021 Loopstudios. All rights reserved.</span>
+</div>
+  </footer>
 
 
 
-
-
-
-
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality
-  projects for some of the best companies around the globe. Our award-winning
-  creations have transformed businesses through digital experiences that bind
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script>
+  let mobileMenuToggle = document.querySelector('.mobile_menu')
+  mobileMenuToggle.addEventListener('click', (e) => {
+    e.target.closest('header').toggleAttribute('open')
+  })
+</script>
 
 </html>

@@ -15,4 +15,34 @@
     .menu a:hover::before {
         display: block;
     }
+    header[open] nav {
+        flex-flow: row wrap;
+        row-gap: 10rem;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: black;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+    header[open] .menu {
+        display: flex;
+    }
+    .mobile_menu i {
+        mask: url(images/icon-hamburger.svg) center / contain no-repeat;
+        -webkit-mask: url(images/icon-hamburger.svg) center / contain no-repeat;
+    }
+    header[open]  .mobile_menu i{
+        mask: url(images/icon-close.svg) center / contain no-repeat;
+        -webkit-mask: url(images/icon-close.svg) center / contain no-repeat;
+    }
+    .creations__item:hover .item__content {
+        display: flex;
+    }
 }
